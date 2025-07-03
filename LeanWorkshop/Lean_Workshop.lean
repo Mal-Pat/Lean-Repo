@@ -196,3 +196,17 @@ end Hidden
 #check Nat.add_comm
 #check Nat.add_assoc
 #check Nat.add_right_cancel
+
+
+
+
+example (a b : Nat) : a + (b + 0) = a + b + a - a := by simp
+
+section
+
+variable (p q r : Prop)
+
+example (h : p) (k : p → q) : q := by
+  exact k h
+
+example

@@ -208,5 +208,3 @@ variable (p q r : Prop)
 
 example (h : p) (k : p → q) : q := by
   exact k h
-
-example
